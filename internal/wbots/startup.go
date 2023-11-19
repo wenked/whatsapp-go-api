@@ -19,6 +19,7 @@ func StartUp() {
 	for _,device := range devices {
 
 		jid := device.ID.User
+		
 
 		err := wbots.InitSession(device,jid)
 

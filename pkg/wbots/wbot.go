@@ -75,6 +75,7 @@ func InitSession(device *store.Device, jid string) error {
 
 	// Create a new session
 
+
 	myClient := &MyClient{}
 	myClient.WAClient = whatsmeow.NewClient(device, nil)
 	myClient.register()
@@ -112,6 +113,7 @@ func InitSession(device *store.Device, jid string) error {
 			fmt.Println("Error connecting to WhatsApp:", err)
 			return err
 		}
+
 	}
 
 	return nil
